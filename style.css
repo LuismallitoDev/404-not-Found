@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main {
+  width: 100%;
+  max-width: 1440px;
+  height: 1080px;
+  max-height: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.top {
+  padding: 32px;
+  margin-bottom: 2.5em;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 700;
+  font-size: 1.42em;
+}
+.image,
+.info {
+  width: 50%;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info h1 {
+  font-size: 4em;
+  font-family: "Space Mono", sans-serif;
+}
+.info p {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.5em;
+  color: #4f4f4f;
+  width: 380px;
+  max-width: 380px;
+  height: 108px;
+  max-height: 108px;
+}
+.info button {
+  background-color: #333333;
+  color: #fff;
+  font-family: "Space Mono", sans-serif;
+  border: none;
+  width: 216px;
+  height: 68px;
+  top: 663px;
+  left: 740px;
+  gap: 0px;
+  opacity: 0px;
+  margin: 2em 0;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.image img {
+  min-width: 440px;
+  max-width: 539px;
+  height: 447px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer {
+  align-self: center;
+  padding: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #bdbdbd;
+}
+footer a {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+@media (max-width: 957px) {
+  body {
+    overflow: auto;
+  }
+  .container {
+    justify-content: flex-start;
+    min-width: 635px;
+  }
+  .content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
